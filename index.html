@@ -43,8 +43,8 @@
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             transform: translateY(0);
             animation: float 6s ease-in-out infinite;
-            max-width: 600px;
-            width: 90%;
+            max-width: 900px;
+            width: 95%;
         }
 
         @keyframes float {
@@ -143,15 +143,14 @@
 
 <body>
     <div class="container">
-        <div class="status-badge">
-            <div class="pulse"></div>
-            Ready for Netlify & S3
+        <h1>Top 10 Highest Grossing Movies</h1>
+        <div style="position: relative; height: 50vh; width: 100%;">
+            <canvas id="revenueChart"></canvas>
         </div>
-        <h1>Hello World</h1>
-        <p>This is a sleek, modern starting point for your website. It's ready to be deployed to Netlify and hooked up
-            to your AWS S3 bucket data.</p>
-        <button class="btn" onclick="alert('Ready to connect to AWS S3!')">Get Started</button>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="fetchFromBucket.js"></script>
 </body>
 
